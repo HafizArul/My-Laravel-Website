@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    opacity: 0.9;
+}
+
+.isi {
+    width: 80%;
+    margin: 30px auto 0;
+    padding: 40px 40px 0 40px;
+    background-color: #ececec;
+    box-sizing: border-box;
+}
+
+.isi ul li {
+    display: inline-block;
+    margin: 15px 0 25px 0;
+    border-right: 2px solid black;
+}
+
+.isi ul li:last-child {
+    border: 0;
+}
+
+.isi ul li a {
+    text-decoration: none;
+    color: #609c07;
+    padding: 15px;
+}
+
+.isi ul li a:hover {
+    background-color: lightgreen;
+    color: rgb(43, 42, 42);
+}
+
+.isi ul li a.active-page {
+    color: rgb(43, 42, 42);
+    background-color: rgb(168, 255, 168);
+    position: relative;
+}
+
+.isi ul li a.active-page::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 0;
+    height: 3px;
+    background-color: #1b1b1b;
+}
+
+.isi .gambar {
+    height: 320px;
+    background-position: 0 -30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.isi h2, .isi p {
+    margin-bottom: 15px;
+}
+
+.isi .main .penulis p {
+    font-size: 13px;
+    margin-bottom: 30px;
+    text-indent: 0;
+}
+
+.isi .main {
+    width: 70%;
+    float: left;
+}
+
+.isi .main p {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 16px;
+}
+
+.isi .ttgpenulis {
+    float: right;
+    width: 25%;
+}
+
+.isi .ttgpenulis h4 {
+    margin-bottom: 20px;
+}
+
+.isi .ttgpenulis img {
+    width: 25%;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.isi .ttgpenulis p {
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.copyright {
+    background-color: lightgreen;
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(65, 64, 64);
+}
+
+/* CLEARFIX */
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
